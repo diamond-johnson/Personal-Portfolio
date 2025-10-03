@@ -6,3 +6,23 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 }
+
+// ========================== scroll section active link =============================
+let sections = documents.queryselectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec =>){
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach.apply(Links =>){
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            };
+        };
+    };
+}
