@@ -26,3 +26,9 @@ window.onscroll = () => {
         };
     };
 }
+
+// ========================== sticky navbar =============================
+let header = document.queryselector('header');
+header.classList.toggle('sticky', window.ScrollY > 100);
+
+// ========================== remove toggle icon and navbar =============================
