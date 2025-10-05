@@ -48,4 +48,11 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right'});
 
-
+// ========================== typed js =============================
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Web Designer', 'Software Engineer', 'Translator', 'Teacher', 'AI specialist'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});
